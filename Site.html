@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolls</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
+</head>
+<body>          
+    <div class="meta-div">
+    <div class="left-margin"></div>
+
+    <div class="centre">
+        <div class="main">
+            <div class="dice">
+                <img style="width: 30vh;" src="assets/dice.png">
+                <p id="result" class="result">[roll number here]</p>
+            </div>
+            <button onclick="dice()">Roll</button>
+        </div>
+        <br>
+        <div class="settings">
+            <input type="checkbox" id="animation" name="animation">
+            <label for="animation">Roll animation</label>
+            <label for="dice-amount">Dice amount:</label>
+            <input type="text" name="dice-amount">
+
+            <br>
+            <span>Advantage: <span id="advantage">[Adv here]</span></span>
+            <button>-</button> <button>+</button>
+
+            <select name="dice-picker" id="dice-picker">
+                <option value="d100">100-sided</option>
+                <option value="d20">20-sided</option>
+                <option value="d12">12-sided</option>
+                <option value="d10">10-sided</option>
+                <option value="d8">8-sided</option>
+                <option value="d6">6-sided</option>
+                <option value="d4">4-sided</option>
+            </select>
+
+            <button>Make custom dice</button> <!-- Make this open a closeable menu window for customizing such -->
+        </div>
+    </div>
+
+    <div class="right-margin"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.meta-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-margin, .right-margin, .centre {
+    flex-basis: calc(33.33%);
+    min-height: 75vh;
+}
+
+.right-margin, .left-margin {
+    background-color: darkblue;
+}
+
+.centre {
+    text-align: center;
+    padding-top: 25vh;
+    background-color: rgba(0, 255, 255, 0.7);
+}
